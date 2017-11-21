@@ -1,8 +1,4 @@
-#####
-# File Name: ttt.sh
-# Author: alen6516
-# Created Time: 2017-11-21
-#####
+# src: http://ashkenazy.blogspot.tw/2013/06/shell-scripting.html
 
 #建議開頭
 #!/bin/bash
