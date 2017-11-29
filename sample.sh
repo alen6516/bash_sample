@@ -128,3 +128,34 @@ function PRINT_FUNCTION(){
 }
 
 PRINT_FUNCTION "first_args"
+
+
+# 檔案比較
+-f file	          file 存在，並且為一檔案。
+-d file	          file 存在，並且為一目錄。
+-r file	          執行此 script 者對 file 具有讀取權限。
+-w file	          執行此 script 者對 file 具有寫入權限。
+-x file	          執行此 script 者對 file 具有執行權限。
+-e file	          file 存在於系統上。
+-s file	          file 存在，並且檔案大小不為 0。
+-u file	          file 具有 SUID 的屬性。
+-g file	          file 具有 SGID 的屬性。
+-k file	          file 具有 Sticky bit 的屬性。
+file1 -nt file2	  file1 較 file2 為新 ( 根據修改時間作比較 )。
+file1 -ot file2	  file1 較 file2 為舊 ( 根據修改時間作比較 )。
+
+# 數值比較
+n1 -eq n2	        n1 等於 n2。
+n1 -ne n2	        n1 不等於 n2。
+n1 -gt n2	        n1 大於 n2。
+n1 -ge n2	        n1 大於等於 n2。
+n1 -lt n2	        n1 小於 n2。
+n1 -le n2	        n1 小於等於 n2。
+
+# 字串比較
+str1 = str2	      str1 等於 str2。
+str1 != str2	    str1 不等於 str2。
+str1 > str2	      str1 大於 str2。
+str1 < str2	      str1 小於 str2。
+-z str	          str 為空字串。
+-n str	          str 為非空字串。
