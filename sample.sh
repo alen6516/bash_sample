@@ -18,6 +18,12 @@ printf "\33[1;31m"
 printf "Color Version: $VAR"
 printf "\33[0m\n"
 
+# 變數與變數、數字相加
+let "sum=a+b"
+let "sum=a+10"
+sum=$((a+b))
+sum=$((a+10))
+
 #正常結束
 exit 0
 
