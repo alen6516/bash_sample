@@ -165,3 +165,6 @@ str1 > str2	      str1 大於 str2。
 str1 < str2	      str1 小於 str2。
 -z str	          str 為空字串。
 -n str	          str 為非空字串。
+
+# 將字串前面的0去掉
+echo "00005 00010 00601 00550" | awk '$0*=1'
