@@ -118,6 +118,12 @@ do
   echo $i
 done
 
+# for 迭代
+for i in $(ls)
+do
+  echo $i
+done
+
 #等候某個事件發生
 FILE_EXISTED=0;
 while [ $FILE_EXISTED -ne "1" ]; 
