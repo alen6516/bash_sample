@@ -28,9 +28,9 @@ sum=$((a+10))
 exit 0
 
 #if-else判斷式
-if [ "$INPUT" == "Yes" ]; then
+if [ -n "$INPUT" ] && ["$INPUT" == "Yes" ]; then
   echo "result is Yes"
-elif [ "$INPUT" == "No" ]; then
+elif [ -n "$INPUT" ] && [ "$INPUT" == "No" ]; then
   echo "result is No"
 else
   echo "wrong input"
